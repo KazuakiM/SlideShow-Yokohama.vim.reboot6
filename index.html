@@ -29,15 +29,23 @@
         <!-- original -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script>
-            var centerArray =  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 19, 23];
+            var centerArray =  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 22, 26];
         </script>
         <style type="text/css">
             .reveal .slides { text-align: left; }
+            .reveal h1,
+            .reveal h2,
+            .reveal h3,
+            .reveal h4,
+            .reveal h5,
+            .reveal h6 {
+                text-transform: none;
+            }
         </style>
     </head>
     <body>
         <!-- Any section element inside of this container is displayed as a slide -->
-        <div class="reveal"><div class="slides">
+        <div class="reveal none"><div class="slides">
             <section data-markdown data-separator="\n---\n$" data-vertical="\n--\n">
                 <script type="text/template">
 # Vim活を振り返って
@@ -66,7 +74,13 @@ Yokohama.vim.reboot #6
 ---
 
 ### ボス:なうでやんぐな構成でいこう。
+### <br />
+
+---
+
+### ボス:なうでやんぐな構成でいこう。
 ### 一般兵:ﾜｰｲヽ(ﾟ∀゜)ﾒ(ﾟ∀゜)ﾒ(ﾟ∀゜)ﾉﾜｰｲ
+
 
 ---
 
@@ -84,22 +98,19 @@ Yokohama.vim.reboot #6
 
 ---
 
-<font size='7'>
-    高校時代はMule使いで、  
-    Vimは colorschemeのdesertに  
-    感動していた私です。
-</font>
+### 高校時代はMule使いで、  
+### Vimは colorschemeのdesertに  
+### 感動していた私。
 
 ---
 
-<font size='7'>
-    大学時代はemacsっていう、  
-    Muleの亜種を使っていた私です。  
-    <br />
-    社会人になって、emacsがなく  
-    [サクラエディタ](http://sakura-editor.sourceforge.net/)を使っていた私です。
-</font>
+### 大学時代はemacsっていう、  
+### Muleの亜種を使っていた私。  
 
+---
+
+### 社会人になって、emacsがなく  
+### [サクラエディタ](http://sakura-editor.sourceforge.net/)を使っていた私。
 
 ---
 
@@ -107,13 +118,15 @@ Yokohama.vim.reboot #6
 
 ---
 
-## でも引けない状況下、
-## なのでやるしかない( ･`ω･´)
+## 引けない状況...
 
 ---
 
-<font size='7'>dotfiles について</font>  
-<br />
+# やるしかない( ･`ω･´)
+
+---
+
+## dotfiles について
 .vimrcについて調べていたところ、  
 [dotfiles](https://github.com/KazuakiM/dotfiles)の存在を知りました。
 
@@ -126,7 +139,7 @@ Yokohama.vim.reboot #6
 
 ## pluginを管理するplugin
 
-[@Shougo](https://twitter.com/shougomatsu)作の[NeoBundle](https://github.com/Shougo/neobundle.vim)が composer, yumみたいに便利だと調べてわかる
+[@Shougo](https://twitter.com/shougomatsu)さん作の[NeoBundle](https://github.com/Shougo/neobundle.vim)が composer, yumみたいに便利だと調べてわかりました
 
 ---
 
@@ -135,16 +148,12 @@ Yokohama.vim.reboot #6
 
 ---
 
-<font size='7'>vimrc読書会</font>
-<br />
-<br />
+## vimrc読書会
 [Lingr](http://lingr.com/room/vim)に登録し、[vimrc読書会](http://vim-jp.org/reading-vimrc/)に参加。
 
 ---
 
-<font size='7'>vimrc読書会の感想</font>
-<br />
-<br />
+## vimrc読書会の感想
 参加者は自分に合った読み方をしている印象が強く、  
 知らない事だらけ。最初は復習の方が大変だった。
 ![reading vimrc](http://kazuakim.github.io/img/SlideShow-Yokohama.vim.reboot6003.png)
@@ -157,7 +166,7 @@ pluginを自作しだす。
 
 ---
 
-<font size='7'>Vim scriptという未知の言語との遭遇</font>
+## Vim scriptという謎言語との遭遇
 
 ---
 
