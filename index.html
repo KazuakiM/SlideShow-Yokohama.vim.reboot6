@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ja">
     <head>
-        <title>Vim for PHP</title>
+        <title>Vim活を振り返って</title>
         <meta charset="utf-8" />
         <meta name="description"                           content="Vim for PHP" />
         <meta name="author"                                content="KazuakiM" />
@@ -29,7 +29,7 @@
         <!-- original -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script>
-            var centerArray =  [0, 2];
+            var centerArray =  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 19, 23];
         </script>
         <style type="text/css">
             .reveal .slides { text-align: left; }
@@ -40,7 +40,12 @@
         <div class="reveal"><div class="slides">
             <section data-markdown data-separator="\n---\n$" data-vertical="\n--\n">
                 <script type="text/template">
-# Vim for PHP
+# Vim活を振り返って
+Yokohama.vim.reboot #6
+
+---
+
+## Yokohama.vim 初参加!!
 
 ---
 
@@ -51,56 +56,151 @@
 * Twitter:[NanohaAsOnKai](https://twitter.com/NanohaAsOnKai)
 * Jobs:Web application engineer
 * Cluster:PHP, Yii, MySQL, Linux, Mac, Android, English
+* vim-scouter: 518 (2015-08-29)
 
 ---
 
-## 皆さんエディタ何使ってますか?
+二年前、
+## 会社で新規プロジェクトが始動
 
 ---
 
-## Vimに向いていない人/環境
-- - -
-* JavaScriptやCSSもガッツり書く人
-
- Atom、Sublime textがおすすめです。  
- Vimはブラウザ連携が若干苦手です。
-
-* 会社支給/指定のテキストエディタがある人
-
- 是非フル活用して下さい。
+### ボス:なうでやんぐな構成でいこう。
+### 一般兵:ﾜｰｲヽ(ﾟ∀゜)ﾒ(ﾟ∀゜)ﾒ(ﾟ∀゜)ﾉﾜｰｲ
 
 ---
 
-## Vimに向いている人/環境
-- - -
-* バックエンドの開発が主な人
-* 有償エディタを購入できない環境
-* 転職もキャリアパスの一つと考えてる人
-
- 転職先に同じエディタがあるとは限りません。
+## さて、エディタどうするか...(ｰﾍー;)
 
 ---
 
-## 最近のVimはすごい
+### AWS上での開発だし、
+### [サクラエディタ](http://sakura-editor.sourceforge.net/)から卒業するか...。
 
 ---
 
-## すごいポイント
-- - -
-IDEでできる事は *だいたい* できます
+## そうだ、Vimにしよう
+## ※通算3回目の挑戦(現在進行形)
 
 ---
 
-## ファイラー
-- - -
-### ディレクトリツリー
-* NERDTree
-* Vimfiler
+<font size='7'>
+    高校時代はMule使いで、  
+    Vimは colorschemeのdesertに  
+    感動していた私です。
+</font>
 
-### ファイル検索
-* CtrlP
-* Unite
+---
 
+<font size='7'>
+    大学時代はemacsっていう、  
+    Muleの亜種を使っていた私です。  
+    <br />
+    社会人になって、emacsがなく  
+    [サクラエディタ](http://sakura-editor.sourceforge.net/)を使っていた私です。
+</font>
+
+
+---
+
+## 不安しかありません ... ((´д｀))
+
+---
+
+## でも引けない状況下、
+## なのでやるしかない( ･`ω･´)
+
+---
+
+<font size='7'>dotfiles について</font>  
+<br />
+.vimrcについて調べていたところ、  
+[dotfiles](https://github.com/KazuakiM/dotfiles)の存在を知りました。
+
+---
+
+## 実際に作ってみた
+![init commit](http://kazuakim.github.io/img/SlideShow-Yokohama.vim.reboot6001.png)
+
+---
+
+## pluginを管理するplugin
+
+[@Shougo](https://twitter.com/shougomatsu)作の[NeoBundle](https://github.com/Shougo/neobundle.vim)が composer, yumみたいに便利だと調べてわかる
+
+---
+
+## 実際に入れてみる
+![plugin manager](http://kazuakim.github.io/img/SlideShow-Yokohama.vim.reboot6002.png)
+
+---
+
+<font size='7'>vimrc読書会</font>
+<br />
+<br />
+[Lingr](http://lingr.com/room/vim)に登録し、[vimrc読書会](http://vim-jp.org/reading-vimrc/)に参加。
+
+---
+
+<font size='7'>vimrc読書会の感想</font>
+<br />
+<br />
+参加者は自分に合った読み方をしている印象が強く、  
+知らない事だらけ。最初は復習の方が大変だった。
+![reading vimrc](http://kazuakim.github.io/img/SlideShow-Yokohama.vim.reboot6003.png)
+
+---
+
+## pluginを自作
+そろそろ痒い所に手を届かせるには辛くなり、  
+pluginを自作しだす。
+
+---
+
+<font size='7'>Vim scriptという未知の言語との遭遇</font>
+
+---
+
+## 困ったとき
+
+書籍📖
+
+* [Vim scriptテクニックバイブル 〜Vim使いの魔法の杖〜](http://gihyo.jp/book/2014/978-4-7741-6634-6)
+
+ホームページ💻
+
+* [Vimスクリプト基礎文法最速マスター - 永遠に未完成](http://d.hatena.ne.jp/thinca/20100201/1265009821)
+* [Big Sky :: モテる男のVim Script短期集中講座](http://mattn.kaoriya.net/software/vim/20111202085236.htm)
+
+---
+
+## 一応、形になった。
+![create plugin](http://kazuakim.github.io/img/SlideShow-Yokohama.vim.reboot6004.png)
+
+---
+
+## 近況
+
+vimrcのスリムマッチョ化がんばってます。  
+[vim-sqlfix](https://github.com/KazuakiM/vim-sqlfix) 作りました。
+
+---
+
+## Fin.
+
+---
+
+## 補足1:サクラエディタは素晴らしい
+
+grep, syntax highlight, タグジャンプ, 補完等  
+PHPの開発をする上では十分な機能を有しています。
+
+---
+
+## 補足1:サクラエディタは素晴らしい
+
+いまでも並列grepや文字コード変換で愛用しています。
+また、でかいファイルを開くとき、比較的安定してます。
                 </script>
             </section>
         </div></div>
